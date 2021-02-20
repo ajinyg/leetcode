@@ -37,6 +37,10 @@ export default (arr)=>{
 	//查找中间下标值
 	let findCenterIndex = (arr,left,right) =>{
 		let flag = arr[left];
+		/*
+			演示 : left = 0
+			也就是需要从第left + 1 第二位开始
+		*/
 		let index = left + 1;
 		for(let i=index;i<=right;i++){
 			if(arr[i] < flag){
